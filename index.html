@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quang Huy's Travel</title>
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="icon" href="./asset/img/icontravel.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./asset/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <div class="container">
+            <div class="container-inner">
+                <a href="" class="header__logo">
+                    <img src="./asset/img/logo.png" alt="Logo TravelOn" class="header__logo-img">
+                </a>
+                <ul class="header__navbar">
+                    <li class="navbar__item navbar__item-has-child navbar__item--active">
+                        <a href="#" class="navbar__item-link">
+                            Home
+                            <i class="navbar__item-icon fas fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown dropdown-left" style="width: 190px;">
+                            <ul class="dropdown__list">
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">Homepage 1</a>
+                                </li>
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link dropdown__item-link--active">Homepage 2</a>
+                                </li>
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">Homepage 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#destination" class="navbar__item-link">
+                            Destination
+                        </a>
+                    </li>
+                    <li class="navbar__item navbar__item-has-child">
+                        <a href="#footer" class="navbar__item-link">
+                            Pages
+                            <span class="navbar__item-badge">NEW</span>
+                            <i class="navbar__item-icon fas fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown dropdown-left" style="width: 190px;">
+                            <ul class="dropdown__list">
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">About Us</a>
+                                </li>
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">Contact</a>
+                                </li>
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">FAQ's</a>
+                                </li>
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">Login</a>
+                                </li>
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">Registration</a>
+                                </li>
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">404</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item navbar__item-has-child">
+                        <a href="#tour" class="navbar__item-link">
+                            Tour
+                            <i class="navbar__item-icon fas fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown dropdown-left" style="width: 190px;">
+                            <ul class="dropdown__list">
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">Viet Nam</a>
+                                </li>
+                                <li class="dropdowm__item">
+                                    <a href="#hotel" class="dropdown__item-link">Hotel</a>
+                                </li>
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">Australia</a>
+                                </li>
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">Tour Grid</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item navbar__item-has-child">
+                        <a href="#portfolio" class="navbar__item-link">
+                            Portfolio
+                            <i class="navbar__item-icon fas fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown dropdown-left" style="width: 190px;">
+                            <ul class="dropdown__list">
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">Portfolio Standard</a>
+                                </li>
+                                <li class="dropdowm__item">
+                                    <a href="#" class="dropdown__item-link">Portfolio Alternative</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#blog" class="navbar__item-link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="navbar__item navbar__item-has-child">
+                        <a href="#" class="navbar__item-link">
+                            Elements
+                            <i class="navbar__item-icon fas fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown dropdown-right" style="width: 720px;">
+                            <div class="row">
+                                <div class="column-1-4">
+                                    <div class="dropdown__heading">
+                                        <a href="#" class="dropdown__item-heading-link">
+                                            Content Component
+                                        </a>
+                                    </div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">Single Artice</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">Article Category Blog</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">Article Category List</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">Featured Articles</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column-1-4">
+                                    <div class="dropdown__heading">
+                                        <a href="#" class="dropdown__item-heading-link">
+                                            Contact Component
+                                        </a>
+                                    </div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">Contact Categories</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">Contact Single</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">Single Contact</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">Featured Contacts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column-1-4">
+                                    <div class="dropdown__item-heading">
+                                        <a href="#" class="dropdown__item-heading-link">
+                                            User Component
+                                        </a>
+                                    </div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">Login Form</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">User Profile</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">Edit User Profile</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="#" class="dropdown__item-link">Registration Form</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column-1-4">
+                                    <a href="#" class="dropdown__item-img-link">
+                                        <img src="./asset/img/nuiphusi.jpg" alt="Núi phú sĩ" class="dropdown__item-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar__item navbar__item-search">
+                        <i class="navbar__item-search-icon fas fa-search"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SLIDER -->
+    <div id="slider">
+        <div class="slider__text">
+            <div class="slider__text-heading">Eternally Yours</div>
+            <div class="slider__text-desc">
+                As your click-through-rate rises, your website's time-on-site will likely <br>
+                increase as well. This is how long your website visitors are staying.
+            </div>
+            <div class="slider__btn">
+                <a href="#" class="slider__btn-link">
+                    Know More
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- CONTENT -->
+    <div id="content">
+        <!-- Travel Search -->
+        <div class="travel__search">
+            <div class="travel__search-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="column-3-4">
+                            <div class="row">
+                                <div class="column-1-2 travel__search-calendar">
+                                    <div class="travel__search-calendar-label">Start Day</div>
+                                    <div class="travel__seacrh-calendar-btn">
+                                        <span>11 August 2021</span>
+                                        <i class="far fa-calendar-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="column-1-2 travel__search-calendar">
+                                    <div class="travel__search-calendar-label">Return Day</div>
+                                    <div class="travel__seacrh-calendar-btn">
+                                        <span>12 August 2021</span>
+                                        <i class="far fa-calendar-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-1-4 travel__search-check-wrap">
+                            <button class="travel__search-check">
+                                <i class="travel__search-check-icon fas fa-search"></i>
+                                <label for="" class="travel__search-check-label">Check</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tour -->
+        <div id="tour" class="travel__tour travel-wrap">
+            <div class="row">
+                <div class="travel-label">
+                    <h3 class="travel-label__heading">Amazing Tours</h3>
+                    <div class="travel-label__desc">
+                        Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo
+                        <br>
+                        igula eget. Aenean massa cum sociis Theme natoque.
+                    </div>
+                </div>
+                <div class="column-1-4">
+                    <div class="tour__destination-wrap">
+                        <div class="tour__destination" style="background-image: url(./asset/img/tour1.jpg) ;">
+                            <div class="tour__destination-label">
+                                <h4 class="tour__destination-name">Germany</h4>
+                                <span class="tour__destination-price">$950</span>
+                            </div>
+                        </div>
+                        <div class="tour__destination--flip">
+                            <div class="tour__destination--flip-content">
+                                <div class="tour__destination--flip-label">
+                                    Aliquam lorem ante, dapius in, viverra quis, fengiat a, tellus.
+                                    Phasellus vivarra nulla ut metus varius laoreet.
+                                </div>
+                                <div class="tour__destination--flip-btn">
+                                    <a href="#" class="tour__destination--flip-btn-link">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-1-4">
+                    <div class="tour__destination-wrap">
+                        <div class="tour__destination" style="background-image: url(./asset/img/tour2.jpg) ;">
+                            <div class="tour__destination-label">
+                                <h4 class="tour__destination-name">Ireland</h4>
+                                <span class="tour__destination-price">$850</span>
+                            </div>
+                        </div>
+                        <div class="tour__destination--flip">
+                            <div class="tour__destination--flip-content">
+                                <div class="tour__destination--flip-label">
+                                    Aliquam lorem ante, dapius in, viverra quis, fengiat a, tellus.
+                                    Phasellus vivarra nulla ut metus varius laoreet.
+                                </div>
+                                <div class="tour__destination--flip-btn">
+                                    <a href="#" class="tour__destination--flip-btn-link">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-1-4">
+                    <div class="tour__destination-wrap">
+                        <div class="tour__destination" style="background-image: url(./asset/img/tour3.jpg) ;">
+                            <div class="tour__destination-label">
+                                <h4 class="tour__destination-name">China</h4>
+                                <span class="tour__destination-price">$750</span>
+                            </div>
+                        </div>
+                        <div class="tour__destination--flip">
+                            <div class="tour__destination--flip-content">
+                                <div class="tour__destination--flip-label">
+                                    Aliquam lorem ante, dapius in, viverra quis, fengiat a, tellus.
+                                    Phasellus vivarra nulla ut metus varius laoreet.
+                                </div>
+                                <div class="tour__destination--flip-btn">
+                                    <a href="#" class="tour__destination--flip-btn-link">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-1-4">
+                    <div class="tour__destination-wrap">
+                        <div class="tour__destination" style="background-image: url(./asset/img/tour4.jpg) ;">
+                            <div class="tour__destination-label">
+                                <h4 class="tour__destination-name">Philippines</h4>
+                                <span class="tour__destination-price">$650</span>
+                            </div>
+                        </div>
+                        <div class="tour__destination--flip">
+                            <div class="tour__destination--flip-content">
+                                <div class="tour__destination--flip-label">
+                                    Aliquam lorem ante, dapius in, viverra quis, fengiat a, tellus.
+                                    Phasellus vivarra nulla ut metus varius laoreet.
+                                </div>
+                                <div class="tour__destination--flip-btn">
+                                    <a href="#" class="tour__destination--flip-btn-link">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Travel Adventure -->
+        <div class="travel__adventure">
+            <div class="container">
+                <div class="row">
+                    <div class="column-1-2">
+                        <h2 class="travel__adventure-sale-off">20% OFF</h2>
+                        <div class="travel__adventure-content">
+                            <h3 class="travel__adventure-name">HaNoi Cruise Adventure</h3>
+                            <div class="travel__adventure-desc">
+                                Wild & wonderful Hanoi, world-heritage Halong Bay, alluring Hue & historic Ho Chi Minh;
+                                plus Phnom Penh & the breathtaking temples of Angkor Wat
+                            </div>
+                        </div>
+                        <h3 class="travel__adventure-schedule">08 days From $2500 per person</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Travel Destination -->
+        <div id="destination" class="travel__destination">
+            <div class="travel-label">
+                <h3 class="travel-label__heading color--white">Choose Destination</h3>
+                <div class="travel-label__desc color--white">
+                    Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo
+                    <br>
+                    igula eget. Aenean massa cum sociis Theme natoque.
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="column-2-12">
+                        <div class="travel__destination-info">
+                            <div class="travel__destination-img">
+                                <a href="#" class="travel__destination-img-link">
+                                    <img src="./asset/img/destination1.jpg" alt="Germany">
+                                </a>
+                            </div>
+                            <div class="travel__destination-content">
+                                <h3 class="travel__destination-name">
+                                    <a href="#">Germany</a>
+                                </h3>
+                                <span class="travel__destination-desc">Zwinger Palace</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-2-12">
+                        <div class="travel__destination-info">
+                            <div class="travel__destination-img">
+                                <a href="#" class="travel__destination-img-link">
+                                    <img src="./asset/img/destination2.jpg" alt="Ireland">
+                                </a>
+                            </div>
+                            <div class="travel__destination-content">
+                                <h3 class="travel__destination-name">
+                                    <a href="#">Ireland</a>
+                                </h3>
+                                <span class="travel__destination-desc">Cliffs of Moher</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-2-12">
+                        <div class="travel__destination-info">
+                            <div class="travel__destination-img">
+                                <a href="#" class="travel__destination-img-link">
+                                    <img src="./asset/img/destination3.jpg" alt="Viet Nam">
+                                </a>
+                            </div>
+                            <div class="travel__destination-content">
+                                <h3 class="travel__destination-name">
+                                    <a href="#">Viet Nam</a>
+                                </h3>
+                                <span class="travel__destination-desc">Hanoi Flagpole</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-2-12">
+                        <div class="travel__destination-info">
+                            <div class="travel__destination-img">
+                                <a href="#" class="travel__destination-img-link">
+                                    <img src="./asset/img/destination4.jpg" alt="Argentina">
+                                </a>
+                            </div>
+                            <div class="travel__destination-content">
+                                <h3 class="travel__destination-name">
+                                    <a href="#">Argentina</a>
+                                </h3>
+                                <span class="travel__destination-desc">Los Glaciares</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-2-12">
+                        <div class="travel__destination-info">
+                            <div class="travel__destination-img">
+                                <a href="#" class="travel__destination-img-link">
+                                    <img src="./asset/img/destination5.jpg" alt="South Africa">
+                                </a>
+                            </div>
+                            <div class="travel__destination-content">
+                                <h3 class="travel__destination-name">
+                                    <a href="#">South Africa</a>
+                                </h3>
+                                <span class="travel__destination-desc">Johannesburg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-2-12">
+                        <div class="travel__destination-info">
+                            <div class="travel__destination-img">
+                                <a href="#" class="travel__destination-img-link">
+                                    <img src="./asset/img/destination6.jpg" alt="Dubai">
+                                </a>
+                            </div>
+                            <div class="travel__destination-content">
+                                <h3 class="travel__destination-name">
+                                    <a href="#">Dubai</a>
+                                </h3>
+                                <span class="travel__destination-desc">Burj Khalifa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel__destination-title">
+                    <h3>Subscribe To The Newsletter</h3>
+                </div>
+                <div class="travel__destination-seacrh-wrap">
+                    <form action="">
+                        <div class="travel__destination-search">
+                            <div class="travel__destination-search-taskbar">
+                                <input type="email" class="travel__destination-search-input"
+                                    placeholder="Enter your email........" required>
+                            </div>
+                            <div class="travel__destination-search-confirm">
+                                <input type="submit" class="travel__destination-search-submit" value="Subscribe">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Travel Packages -->
+        <div id="portfolio" class="travel__packages">
+            <div class="travel-label">
+                <h3 class="travel-label__heading">Popular Packages</h3>
+                <div class="travel-label__desc">
+                    Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo
+                    <br>
+                    igula eget. Aenean massa cum sociis Theme natoque.
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column-1-4">
+                    <a href="#" class="travel__packages-info">
+                        <div class="travel__packages-photo">
+                            <div class="travel__packages-img" style="background-image: url(./asset/img/packages1.jpg);">
+                            </div>
+                        </div>
+                        <div class="travel__packages-label">
+                            <h3 class="travel__packages-name">Visually impact mind</h3>
+                            <span class="travel__packages-price">$1000</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="column-1-4">
+                    <a href="#" class="travel__packages-info">
+                        <div class="travel__packages-photo">
+                            <div class="travel__packages-img" style="background-image: url(./asset/img/packages2.jpg);">
+                            </div>
+                        </div>
+                        <div class="travel__packages-label">
+                            <h3 class="travel__packages-name">Enable value chain</h3>
+                            <span class="travel__packages-price">$800</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="column-1-4">
+                    <a href="#" class="travel__packages-info">
+                        <div class="travel__packages-photo">
+                            <div class="travel__packages-img" style="background-image: url(./asset/img/packages3.jpg);">
+                            </div>
+                        </div>
+                        <div class="travel__packages-label">
+                            <h3 class="travel__packages-name">Visual vertical interface</h3>
+                            <span class="travel__packages-price">$1000</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="column-1-4">
+                    <a href="#" class="travel__packages-info">
+                        <div class="travel__packages-photo">
+                            <div class="travel__packages-img" style="background-image: url(./asset/img/packages4.jpg);">
+                            </div>
+                        </div>
+                        <div class="travel__packages-label">
+                            <h3 class="travel__packages-name">Integrate clicks method</h3>
+                            <span class="travel__packages-price">$1200</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Travel Hotel -->
+        <div id="hotel" class="travel__hotel">
+            <div class="travel-label">
+                <h3 class="travel-label__heading">Hotels & Resort</h3>
+                <div class="travel-label__desc">
+                    Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo
+                    <br>
+                    igula eget. Aenean massa cum sociis Theme natoque.
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="column-1-4">
+                        <div class="travel__hotel-info">
+                            <div class="travel__hotel-img">
+                                <img src="./asset/img/hotel2.jpg" alt="Lifehack">
+                            </div>
+                            <div class="travel__hotel-content">
+                                <a href="#" class="travel__hotel-label">
+                                    <h3 class="travel__hotel-name">Lifehack</h3>
+                                    <span class="travel__hotel-price">$95</span>
+                                </a>
+                                <div class="travel__hotel-desc">
+                                    <span>2 Person per night. single bed.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-1-4">
+                        <div class="travel__hotel-info">
+                            <div class="travel__hotel-img">
+                                <img src="./asset/img/hotel3.jpg" alt="Natella">
+                            </div>
+                            <div class="travel__hotel-content">
+                                <a href="#" class="travel__hotel-label">
+                                    <h3 class="travel__hotel-name">Natella</h3>
+                                    <span class="travel__hotel-price">$90</span>
+                                </a>
+                                <div class="travel__hotel-desc">
+                                    <span>4 Person per night. double bed.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-1-4">
+                        <div class="travel__hotel-info">
+                            <div class="travel__hotel-img">
+                                <img src="./asset/img/hotel1.jpg" alt="Rose Hotel">
+                            </div>
+                            <div class="travel__hotel-content">
+                                <a href="#" class="travel__hotel-label">
+                                    <h3 class="travel__hotel-name">Rose Hotel</h3>
+                                    <span class="travel__hotel-price">$80</span>
+                                </a>
+                                <div class="travel__hotel-desc">
+                                    <span>4 Person per night. double bed.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-1-4">
+                        <div class="travel__hotel-info">
+                            <div class="travel__hotel-img">
+                                <img src="./asset/img/hotel4.jpg" alt="TP. Ho Chi Minh">
+                            </div>
+                            <div class="travel__hotel-content">
+                                <a href="#" class="travel__hotel-label">
+                                    <h3 class="travel__hotel-name">TP. Ho Chi Minh</h3>
+                                    <span class="travel__hotel-price">$100</span>
+                                </a>
+                                <div class="travel__hotel-desc">
+                                    <span>2 Person per night. single bed.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Travel Reviews -->
+        <div id="blog" class="travel__reviews">
+            <div class="travel-label">
+                <h3 class="travel-label__heading">Travelers Reviews</h3>
+                <div class="travel-label__desc">
+                    Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo
+                    <br>
+                    igula eget. Aenean massa cum sociis Theme natoque.
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="column-1-2">
+                        <div class="travel__reviews-info">
+                            <i class="travel__reviews-icon fas fa-quote-left"></i>
+                            <div class="travel__reviews-content">
+                                <strong>I thought the trip was great. Overall it was well.</strong>
+                                <br> Philosophia comprehensam eam ad. Pro an quem dolores instructior, sed ei verear
+                                mediocrem, ad tantas epicurei cum. Eu per sutu constituto, ad dicant interpretea utrei.
+                            </div>
+                            <div class="travel__reviews-person">
+                                <div class="travel__reviews-person-img">
+                                    <img src="./asset/img/reviews1.jpg" alt="Gordon Ramsay A Taste of Viet Nam">
+                                </div>
+                                <div class="travel__reviews-person-think">Gordon Ramsay A Taste of Viet Nam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-1-2">
+                        <div class="travel__reviews-info">
+                            <i class="travel__reviews-icon fas fa-quote-left"></i>
+                            <div class="travel__reviews-content">
+                                <strong>I thought the trip was great. Overall it was well.</strong>
+                                <br> Philosophia comprehensam eam ad. Pro an quem dolores instructior, sed ei verear
+                                mediocrem, ad tantas epicurei cum. Eu per sutu constituto, ad dicant interpretea utrei.
+                            </div>
+                            <div class="travel__reviews-person">
+                                <div class="travel__reviews-person-img">
+                                    <img src="./asset/img/reviews2.jpg" alt="Lionel Messi Best of Paris">
+                                </div>
+                                <div class="travel__reviews-person-think">Lionel Messi Best of Paris</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Travel Image -->
+        <div class="travel__image">
+            <div class="row">
+                <div class="width-1-6">
+                    <a href="#" class="image-wrap">
+                        <div class="image-info">
+                            <img src="./asset/img/image1.jpg" alt="Image1">
+                        </div>
+                        <div class="image--flip">
+                            <i class="travel__image--flip-icon fas fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="width-1-6">
+                    <a href="#" class="image-wrap">
+                        <div class="image-info">
+                            <img src="./asset/img/image2.jpg" alt="Image2">
+                        </div>
+                        <div class="image--flip">
+                            <i class="travel__image--flip-icon fas fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="width-1-6">
+                    <a href="#" class="image-wrap">
+                        <div class="image-info">
+                            <img src="./asset/img/image3.jpg" alt="Image3">
+                        </div>
+                        <div class="image--flip">
+                            <i class="travel__image--flip-icon fas fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="width-1-6">
+                    <a href="#" class="image-wrap">
+                        <div class="image-info">
+                            <img src="./asset/img/image4.jpg" alt="Image4">
+                        </div>
+                        <div class="image--flip">
+                            <i class="travel__image--flip-icon fas fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="width-1-6">
+                    <a href="#" class="image-wrap">
+                        <div class="image-info">
+                            <img src="./asset/img/image5.jpg" alt="Image5">
+                        </div>
+                        <div class="image--flip">
+                            <i class="travel__image--flip-icon fas fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="width-1-6">
+                    <a href="#" class="image-wrap">
+                        <div class="image-info">
+                            <img src="./asset/img/image6.jpg" alt="Image6">
+                        </div>
+                        <div class="image--flip">
+                            <i class="travel__image--flip-icon fas fa-search"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="column-1-4">
+                    <div class="footer__travel-info">
+                        <div class="footer__travel-img">
+                            <img src="./asset/img/logo.png" alt="Travel On">
+                        </div>
+                        <div class="footer__travel-label">
+                            <strong>TravelOn</strong>
+                            is a Travel / Tourism Joomla Template built with Helix Ultimate & SP Page Builder Pro.
+                        </div>
+                        <div class="footer__travel-social">
+                            <span class="footer__travel-contact">
+                                <i class="footer__travel-icon fas fa-map-signs"></i>
+                                <span>23 New Street, Melbourne</span>
+                            </span>
+                            <div class="footer__travel-contact">
+                                <i class="footer__travel-icon fas fa-envelope-open"></i>
+                                <a href="mailto:daoquanghuy2907@gmail.com">daoquanghuy2907@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-1-4">
+                    <div class="footer__news">
+                        <h3 class="footer__heading">Newsletter</h3>
+                        <div class="footer__news-sign">
+                            <span class="footer__news-label">
+                                Sign up with email to get updates
+                            </span>
+                            <form action="">
+                                <div class="footer__news-wrap">
+                                    <div class="footer__news-taskbar-input">
+                                        <input type="email" class="footer__news-input" required
+                                            placeholder="Enter your email........">
+                                    </div>
+                                    <div class="footer__news-confirm">
+                                        <input type="submit" class="footer__news-confirm-input" value="Send">
+                                        <!-- <i class="footer__news-confirm-icon fas fa-long-arrow-alt-right"></i> -->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <ul class="news__social">
+                            <li class="news__social-item">
+                                <a href="https://www.facebook.com/tuilahuyday.galvin/"
+                                    class="news__socials-items-link">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li class="news__social-item">
+                                <a href="" class="news__socials-items-link">
+                                    <i class="fab fab fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li class="news__social-item">
+                                <a href="" class="news__socials-items-link">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li class="news__social-item">
+                                <a href="https://www.instagram.com/tuilahuyday_/" class="news__socials-items-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="news__social-item">
+                                <a href="" class="news__socials-items-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column-1-4">
+                    <div class="footer__post">
+                        <h3 class="footer__heading">Latest Post</h3>
+                        <ul class="footer__post-list">
+                            <li class="footer__post-item">
+                                <a href="#" class="footer__post-item-link">
+                                    Athens 4 Day Greek Isles
+                                    <span>11 August 2021</span>
+                                </a>
+                            </li>
+                            <li class="footer__post-item">
+                                <a href="#" class="footer__post-item-link">
+                                    Book a ticket & Just Leave
+                                    <span>14 August 2021</span>
+                                </a>
+                            </li>
+                            <li class="footer__post-item">
+                                <a href="#" class="footer__post-item-link">
+                                    I wanna travel the world
+                                    <span>14 September 2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                </div>
+                <div class="column-1-4">
+                    <div class="footer__insta">
+                        <h3 class="footer__heading">Instagram</h3>
+                        <div class="row--5">
+                            <div class="column-1-3--5">
+                                <a href="#" class="image-wrap">
+                                    <div class="image-info">
+                                        <img src="./asset/img/insta1.jpg" alt="Insta1">
+                                    </div>
+                                    <div class="image--flip">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-1-3--5">
+                                <a href="#" class="image-wrap">
+                                    <div class="image-info">
+                                        <img src="./asset/img/packages1.jpg" alt="Insta2">
+                                    </div>
+                                    <div class="image--flip">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-1-3--5">
+                                <a href="#" class="image-wrap">
+                                    <div class="image-info">
+                                        <img src="./asset/img/insta3.jpg" alt="Insta3">
+                                    </div>
+                                    <div class="image--flip">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-1-3--5">
+                                <a href="#" class="image-wrap">
+                                    <div class="image-info">
+                                        <img src="./asset/img/packages3.jpg" alt="Insta4">
+                                    </div>
+                                    <div class="image--flip">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-1-3--5">
+                                <a href="#" class="image-wrap">
+                                    <div class="image-info">
+                                        <img src="./asset/img/packages4.jpg" alt="Insta5">
+                                    </div>
+                                    <div class="image--flip">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-1-3--5">
+                                <a href="#" class="image-wrap">
+                                    <div class="image-info">
+                                        <img src="./asset/img/insta6.jpg" alt="Insta6">
+                                    </div>
+                                    <div class="image--flip">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUB FOOTER -->
+    <div class="sub__footer">
+        <div class="container">
+            <div class="row">
+                <div class="sub__footer-text">
+                    <span class="sub__footer-title">
+                        ©2021 TravelOn. All Rights Reserved. Designed By
+                    </span>
+                    <i class="sub__footer-icon fas fa-heart"></i>
+                    <a href="#" class="sub__footer-text-link">
+                        Quang Huy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<!-- JS khi cuộn chuột xuống -> thay đổi class (ĐI COP) -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var menu = document.querySelectorAll('div#header');
+        var menu = menu[0];
+        
+        //Truy xuất div menu
+        var trangthai = "duoi20";
+        window.addEventListener("scroll", function () {
+            var x = pageYOffset;
+            if (x > 20) {
+                if (trangthai == "duoi20") {
+                    trangthai = "tren20";
+                    menu.classList.add('header-sticky');
+                }
+            }
+            else {
+                if (trangthai == "tren20") {
+                    menu.classList.remove('header-sticky');
+                    trangthai = "duoi20";
+                }
+            }
+
+        })
+    })
+</script>
+
+</html>
